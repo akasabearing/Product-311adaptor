@@ -3,73 +3,60 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>AKASA Product H311</title>
+  <title>AKASA Product Info</title>
   <style>
     body {
       margin: 0;
-      padding: 0;
-      background-color: #ffffff;
+      background: #000;
+      color: white;
       font-family: Arial, sans-serif;
-      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
 
     .logo {
+      animation: fadeIn 3s ease-in-out forwards;
       width: 150px;
-      margin: 40px auto 20px;
-      animation: zoomIn 2s ease;
+      margin-top: 50px;
     }
 
-    @keyframes zoomIn {
-      0% { transform: scale(0); opacity: 0; }
-      100% { transform: scale(1); opacity: 1; }
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: scale(0.8); }
+      100% { opacity: 1; transform: scale(1); }
     }
 
-    .image-container {
+    .product-image {
       width: 100vw;
       max-width: 600px;
       aspect-ratio: 1 / 1;
-      margin: 0 auto;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color: #f9f9f9;
-    }
-
-    .image-container img {
-      width: 100%;
-      height: 100%;
       object-fit: contain;
+      margin: 20px 0;
     }
 
     .button-link {
-      display: inline-block;
-      margin: 25px auto;
-      padding: 12px 24px;
-      background-color: #007bff;
+      margin-bottom: 30px;
+      background: #1e90ff;
+      padding: 15px 30px;
+      border: none;
       color: white;
+      border-radius: 5px;
       text-decoration: none;
       font-size: 16px;
-      border-radius: 6px;
-      transition: background-color 0.3s ease;
     }
 
-    .button-link:hover {
-      background-color: #0056b3;
-    }
   </style>
 </head>
 <body>
 
-  <!-- Logo Animation -->
+  <!-- Logo animation -->
   <img src="Picsart_25-04-19_22-39-28-048.jpg" alt="AKASA Logo" class="logo" />
 
-  <!-- Product Image Square -->
-  <div class="image-container">
-    <img src="Picsart_25-05-05_02-04-41-286.png" alt="Product H311" />
-  </div>
+  <!-- Product Image -->
+  <img src="Picsart_25-05-05_02-04-41-286.png" alt="Product Image" class="product-image" />
 
-  <!-- Website Button -->
-  <a href="https://akasabearing.co.in" class="button-link" target="_blank">Visit Our Website</a>
+  <!-- Website link -->
+  <a href="https://akasabearing.co.in" class="button-link" target="_blank">Visit Website</a>
 
 </body>
 </html>
